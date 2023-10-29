@@ -1,0 +1,69 @@
+.ubicacion {
+  background-color: var(--secondary-color);
+  color: var(--text-color-inverse);
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.ubicacion-conteiner {
+  padding: 5px 0 0;
+  text-align: center;
+}
+
+.ubicacion h2 {
+  text-align: center;
+}
+
+.ubicacion-date p {
+  color: var(--text-color);
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.map {
+  width: 500px;
+  height: 250px;
+  max-width: 100%;
+}
+
+.ubicacion p {
+  color: var(--text-color-inverse);
+  font-weight: 450;
+  text-align: center;
+}
+
+@media (min-width: 950px) {
+
+  .ubicacion-conteiner {
+    padding: 20px 10px 0 30px;
+    display: flex;
+    text-align: center;
+  }
+
+  .ubicacion h2 {
+    font-size: 45px;
+  }
+
+  .ubicacion-date  {
+    display: flex;
+  }
+
+  .ubicacion-date, .ubicacion-date2 {
+    width: 50%;
+    flex-direction: column;
+  }
+  
+
+  .map {
+    width: 700px;
+    height: 450px;
+  }
+
+  .ubicacion p {
+    color: var(--text-color-inverse);
+    font-weight: 450;
+    text-align: center;
+  }
+}

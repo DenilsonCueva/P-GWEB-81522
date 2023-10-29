@@ -1,0 +1,59 @@
+.actividades {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.actividades-title {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.actividades-actv {
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 42px;
+  padding: 0.5em 0.7em;
+  margin: 10px;
+}
+
+.actividades-list {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+
+@media(min-width: 950px) {
+  .actividades-title {
+    font-size: 50px;
+  }
+  
+  .actividades-actv {
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .lista {
+    display: flex;
+    width: 600px;
+    height: 200px;
+  }
+
+  .lista img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+
+  .lista img:hover {
+    cursor: crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+}

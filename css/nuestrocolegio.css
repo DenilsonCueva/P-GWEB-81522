@@ -1,0 +1,107 @@
+.nuestrocolegio {
+  display: flex;
+  flex-direction: column;
+}
+
+.nuestrocolegio-body {
+  background-image: linear-gradient(to bottom, #163930, #A3BAA0, #163930);
+  color: var(--text-color);
+}
+
+.wave {
+  width: 100%;
+  position: relative;
+  top: 2px;
+}
+
+.wave_bottom {
+  transform: scaleY(-1);
+  top: -2px;
+}
+
+.nuestrocolegio-title {
+  color: var(--text-color-inverse);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px;
+}
+
+.nuestrocolegio-date {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.nuestrocolegio-description {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 450;
+}
+
+.nuestrocolegiop {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+  .nuestrocolegio-title {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 35px 0;
+  }
+
+  .nuestrocolegio-date {
+    font-size: 35px;
+  }
+
+  .nuestrocolegio-description {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.2;
+    font-weight: 450;
+  }
+
+  .nuestrocolegiop {
+    padding: 0;
+  }
+
+  .nuestrocolegio-grid {
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .line {
+    background-color: var(--secondary-color);
+    position: relative;
+  }
+
+  .line::before,
+  .line::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left: -9px;
+  }
+
+  .line::after {
+    top: 100%;
+    z-index: 1;
+  }
+}
